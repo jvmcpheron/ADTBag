@@ -12,26 +12,36 @@ Jane McPheron
 #include <sstream>
 using namespace std;
 
+
+//declaring class
 class Bag {
     public:
+        //DEFAULT CONSTRUCTOR
         Bag(){
             vector<string> allStuff;
         }
 
+        //public display function
         void display(){
             for (int i = 0; i < allStuff.size(); i++) {
                 std::cout << allStuff[i] << ", ";
             }
         }
+
+        //public add function
         void add(string item){
             allStuff.push_back(item);
         }
+
     private:
+        //vector for storing data
         vector<string> allStuff;
         
 };
 
 int main(){
+
+    //code from asignment
    Bag grabBag;
    string item;
 
